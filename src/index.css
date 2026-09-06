@@ -1,0 +1,20 @@
+/* Minimal utility classes — the component was authored assuming Tailwind's
+   core utilities are available. This file supplies just the ones it uses. */
+html, body, #root {
+  background: #0a0c09;
+  margin: 0;
+}
+.flex { display: flex; }
+.grid { display: grid; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.justify-center { justify-content: center; }
+.flex-wrap { flex-wrap: wrap; }
+.gap-1 { gap: 4px; }
+.gap-2 { gap: 8px; }
+.gap-3 { gap: 12px; }
+.animate-spin { animation: resq-utility-spin 1s linear infinite; }
+
+@keyframes resq-utility-spin {
+  to { transform: rotate(360deg); }
+}
